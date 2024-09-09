@@ -227,12 +227,13 @@ li{
     }
     .logo img{
         display: block;
-        width: 250px;
+        width: 200px;
     }
     .logo2 img{
         display: none;
     }
 }
+
 .home{
     position: relative;
     width: 100%;
@@ -334,6 +335,7 @@ span{
     }
 
 }
+
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -687,7 +689,7 @@ ul{
 }
 @media(max-width: 535px){
     .footer-col{
-        position: relative;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -763,14 +765,11 @@ ul{
     }
 }
 @media (max-width:365px){
-    .home-img img{
-        width: 350vw;
-        
-    }
-    .about-img img{
-        width: 90vw;
-    }
+   .whatsapp{
+    
+   }
 }
+
 
 
 
@@ -844,4 +843,50 @@ a:focus, a:active {
     outline: none;
     box-shadow: none;
     -webkit-tap-highlight-color: transparent; /* Disabilita l'evidenziazione su dispositivi mobili WebKit */
+}
+
+
+/*NOOOOOOOOOOOOOOOOOOOOOOOOO*/
+@media(max-width:361px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 68px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #323946;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .nav-item{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 32px;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+    .logo img{
+        display: block;
+        width: 200px;
+    }
+    .logo2 img{
+        display: none;
+    }
 }

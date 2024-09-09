@@ -766,7 +766,7 @@ ul{
 }
 @media (max-width:365px){
    .whatsapp{
-    
+    width: 100%;
    }
 }
 
